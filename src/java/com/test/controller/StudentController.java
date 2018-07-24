@@ -1,5 +1,6 @@
 package com.test.controller;
 
+import com.test.core.BaseService;
 import com.test.dao.StudentDao;
 import com.test.entity.StudentEntity;
 import org.springframework.stereotype.Controller;
@@ -10,7 +11,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/student")
-public class StudentController {
+public class StudentController extends BaseService {
     //映射一个action
     @RequestMapping("/studentList")
     @ResponseBody
