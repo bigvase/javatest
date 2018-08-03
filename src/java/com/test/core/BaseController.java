@@ -15,6 +15,4 @@ public class BaseController {
         this.flash = flash;
     }
 
-
-    protected  
 }

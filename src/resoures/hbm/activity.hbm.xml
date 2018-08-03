@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.test.entity.ActivityEntity" table="tc_activity">
+        <id name="id">
+            <!--生成持久化类的对象的唯一标识符-->
+            <generator class="assigned"></generator>
+        </id>
+
+        <property name="title"></property>
+        <property name="cover_image"></property>
+        <property name="intro"></property>
+        <property name="content"></property>
+        <property name="add_time"></property>
+        <property name="status"></property>
+    </class>
+
+</hibernate-mapping>
